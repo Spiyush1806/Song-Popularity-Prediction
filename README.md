@@ -8,7 +8,7 @@ Before running the code, please adjust the file paths as this notebook was origi
 
 ## 🧠 Methodology
 
-**Imputation:** Performed using **MICE (Multiple Imputation by Chained Equations)** with `IterativeImputer` on the concatenated train and test data to maintain distributional consistency and avoid bias.  
+**Imputation:** Performed using **MICE (Multiple Imputation by Chained Equations)** with `IterativeImputer` on the train and test data separately to avoid data leakage. 
 
 **Feature Engineering:** Created extensive interaction and polynomial features, including ratios, logarithmic transformations, squared terms, and binned versions of numerical attributes (e.g., energy, loudness, tempo).  
 
